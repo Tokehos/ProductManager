@@ -7,7 +7,7 @@ public class ProductRepository {
 
     public void save(Product item) {
         Product[] tmp = new Product[items.length + 1];
-        for (int i = 0; i < items.length; i++){
+        for (int i = 0; i < items.length; i++) {
             tmp[i] = items[i];
         }
         int lastIndex = tmp.length - 1;

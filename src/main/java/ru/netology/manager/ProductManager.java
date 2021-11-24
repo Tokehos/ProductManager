@@ -23,12 +23,12 @@ public class ProductManager {
 
         for (Product item : items) {
             if (matches(item, text)) {
-                int lenght = result.length+1;
+                int lenght = result.length + 1;
                 Product[] tmp = new Product[lenght];
-                System.arraycopy(result,0, tmp,0, result.length);
+                System.arraycopy(result, 0, tmp, 0, result.length);
                 tmp[tmp.length - 1] = item;
                 result = tmp;
-                lenght++;
+
             }
         }
         return result;
